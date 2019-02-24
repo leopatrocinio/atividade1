@@ -1,0 +1,43 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 150px auto 100px;
+    grid-template-areas: 
+    "topo topo topo"
+    "l1 corpo l2"
+    "rodape rodape rodape";
+    height: 100%;
+   
+
+}
+.topo{
+    grid-area: topo;
+    background-color: red;
+}
+
+.corpo{
+    grid-area: corpo;
+    background-color: blue;
+}
+
+.l1{
+    grid-area: l1;
+    background-color: green;
+}
+
+.l2{
+    grid-area: l2;
+    background-color: green;
+}
+
+
+.rodape{
+    grid-area: rodape;
+    background-color: yellow;
+}
